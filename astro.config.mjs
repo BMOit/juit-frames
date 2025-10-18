@@ -1,5 +1,6 @@
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://mysite.com",
@@ -9,6 +10,7 @@ export default defineConfig({
   integrations: [sitemap()],
   prefetch: true,
   vite: {
+    plugins: [tailwindcss],
     ssr: {
       noExternal: ["smartypants"],
     },

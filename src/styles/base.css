@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   color-scheme: light dark;
   --bg: #ffffff;
@@ -11,4 +13,8 @@
 body {
   background-color: light-dark(var(--bg), var(--bg-dark));
   font-family: var(--font);
+}
+
+a {
+  text-decoration: underline;
 }

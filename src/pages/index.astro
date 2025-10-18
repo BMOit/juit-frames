@@ -4,15 +4,20 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "../images/*.{jpg,jpeg,png,webp}",
+  "../images/*.{JPG,jpg,jpeg,png,webp}",
 );
 ---
 
 <BaseLayout
-  title="Astro Photo Grid"
-  description="A minimal, single-page photo gallery for Astro."
+  title="JUIT Frames 2025"
+  description=""
 >
   <section class="justified-gallery" id="photoswipe">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="text-4xl font-bold">JUIT Frames 2025</h1>
+      <p class="text-lg">Photos clicked by <a href="https://www.linkedin.com/in/bmoit/" target="_blank">Rajneesh</a> at <a href="https://share.google/6iatceBFfVNBzR6G5" target="_blank">JUIT, Solan</a>.</p>
+      <p class="text-lg">Hardware Used: iPhone 15 (Exposure Modifications in Some Photos)</p>
+    </div>
     {
       Object.entries(images).map(async ([_path, image], index) => {
         const { default: imageData } = await image();
