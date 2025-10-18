@@ -1,6 +1,7 @@
 import sitemap from "@astrojs/sitemap";
-import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel";
 
 export default defineConfig({
   site: "https://mysite.com",
@@ -9,6 +10,7 @@ export default defineConfig({
   },
   integrations: [sitemap()],
   prefetch: true,
+  adapter: vercel(),
   vite: {
     plugins: [tailwindcss],
     ssr: {
