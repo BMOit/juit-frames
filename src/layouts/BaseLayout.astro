@@ -3,6 +3,7 @@ import "~/styles/reset.css";
 import "~/styles/base.css";
 
 import smartypants from "smartypants";
+import Analytics from '@vercel/analytics/astro'
 
 const siteName = "Astro Photo Grid";
 
@@ -46,6 +47,7 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · ${siteName}`
     }
   </head>
   <body>
+    <Analytics />
     <slot />
   </body>
 </html>
