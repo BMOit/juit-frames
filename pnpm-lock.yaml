@@ -26,9 +26,6 @@ importers:
       '@vercel/analytics':
         specifier: ^1.6.1
         version: 1.6.1
-      astro:
-        specifier: ^5.16.11
-        version: 5.16.11(@types/node@25.0.9)(@vercel/functions@2.2.13)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.55.2)(typescript@5.9.3)(yaml@2.8.2)
       smartypants:
         specifier: ^0.2.2
         version: 0.2.2
@@ -42,6 +39,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.3.11
         version: 2.3.11
+      astro:
+        specifier: ^5.16.11
+        version: 5.16.11(@types/node@25.0.9)(@vercel/functions@2.2.13)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.55.2)(typescript@5.9.3)(yaml@2.8.2)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
