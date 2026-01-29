@@ -31,7 +31,7 @@
     "astro": "^5.16.11",
     "husky": "^9.1.7",
     "sharp": "^0.34.5",
-    "stylelint": "^16.24.0",
+    "stylelint": "^16.26.1",
     "stylelint-config-astro": "^1.0.4",
     "stylelint-config-standard": "^38.0.0"
   },
